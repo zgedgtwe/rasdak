@@ -53,7 +53,7 @@ const QuickLinksWidget: React.FC<{ handleNavigation: (view: ViewType) => void; c
                         className="flex flex-col items-center justify-center p-4 bg-brand-bg rounded-xl text-center hover:bg-brand-input hover:shadow-md transition-all duration-200"
                         aria-label={`Buka ${link.label}`}
                     >
-                        <link.icon className="w-8 h-8 text-brand-accent mb-2" />
+                        <link.icon className="w-6 h-6 text-brand-accent mb-2" />
                         <span className="text-xs font-semibold text-brand-text-primary">{link.label}</span>
                     </button>
                 ))}

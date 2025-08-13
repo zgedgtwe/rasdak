@@ -253,8 +253,8 @@ const Packages: React.FC<PackagesProps> = ({ packages, setPackages, addOns, setA
                             <div className="text-right ml-4 flex-shrink-0">
                                 <p className="text-lg font-semibold text-brand-text-light whitespace-nowrap">{formatCurrency(pkg.price)}</p>
                                 <div className="flex items-center justify-end space-x-2 mt-2">
-                                    <button type="button" onClick={() => handlePackageEdit(pkg)} className="p-1 text-brand-text-secondary hover:text-brand-accent" title="Edit"><PencilIcon className="w-4 h-4"/></button>
-                                    <button type="button" onClick={() => handlePackageDelete(pkg.id)} className="p-1 text-brand-text-secondary hover:text-brand-danger" title="Hapus"><Trash2Icon className="w-4 h-4"/></button>
+                                    <button type="button" onClick={() => handlePackageEdit(pkg)} className="p-1.5 text-brand-text-secondary hover:text-brand-accent" title="Edit"><PencilIcon className="w-4 h-4"/></button>
+                                    <button type="button" onClick={() => handlePackageDelete(pkg.id)} className="p-1.5 text-brand-text-secondary hover:text-brand-danger" title="Hapus"><Trash2Icon className="w-4 h-4"/></button>
                                 </div>
                             </div>
                         </div>
@@ -312,8 +312,8 @@ const Packages: React.FC<PackagesProps> = ({ packages, setPackages, addOns, setA
                         <div className="flex items-center gap-4">
                             <p className="text-sm font-semibold text-brand-text-primary">{formatCurrency(addOn.price)}</p>
                             <div className="flex items-center space-x-2">
-                                <button type="button" onClick={() => handleAddOnEdit(addOn)} className="p-1 text-brand-text-secondary hover:text-brand-accent" title="Edit"><PencilIcon className="w-4 h-4"/></button>
-                                <button type="button" onClick={() => handleAddOnDelete(addOn.id)} className="p-1 text-brand-text-secondary hover:text-brand-danger" title="Hapus"><Trash2Icon className="w-4 h-4"/></button>
+                                <button type="button" onClick={() => handleAddOnEdit(addOn)} className="p-1.5 text-brand-text-secondary hover:text-brand-accent" title="Edit"><PencilIcon className="w-4 h-4"/></button>
+                                <button type="button" onClick={() => handleAddOnDelete(addOn.id)} className="p-1.5 text-brand-text-secondary hover:text-brand-danger" title="Hapus"><Trash2Icon className="w-4 h-4"/></button>
                             </div>
                         </div>
                     </div>))}

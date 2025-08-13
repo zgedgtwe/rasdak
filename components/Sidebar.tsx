@@ -73,7 +73,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeView, setActiveView, isOpen, se
                         : 'text-brand-text-primary hover:bg-brand-input'
                     }`}
                 >
-                  <div className="w-6 mr-3 flex-shrink-0 flex items-center justify-center">
+                  <div className="w-5 mr-3 flex-shrink-0 flex items-center justify-center">
                     <item.icon className={`w-5 h-5 ${activeView !== item.view ? 'text-brand-text-secondary' : ''}`} />
                   </div>
                   <span>{item.label}</span>
@@ -100,7 +100,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeView, setActiveView, isOpen, se
                 className="flex items-center w-full px-4 py-3 my-1 text-sm font-semibold rounded-lg text-brand-text-primary hover:bg-brand-input transition-colors"
                 aria-label="Keluar dari aplikasi"
             >
-                <div className="w-6 mr-3 flex-shrink-0 flex items-center justify-center">
+                <div className="w-5 mr-3 flex-shrink-0 flex items-center justify-center">
                     <LogOutIcon className="w-5 h-5 text-brand-text-secondary" />
                 </div>
                 <span>Keluar</span>

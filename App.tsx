@@ -53,7 +53,7 @@ const BottomNavBar: React.FC<{ activeView: ViewType; handleNavigation: (view: Vi
                         onClick={() => handleNavigation(item.view)}
                         className={`flex flex-col items-center justify-center w-full transition-colors duration-200 ${activeView === item.view ? 'text-brand-accent' : 'text-brand-text-secondary'}`}
                     >
-                        <item.icon className="w-6 h-6 mb-1" />
+                        <item.icon className="w-5 h-5 mb-1" />
                         <span className="text-[10px] font-bold">{item.label}</span>
                     </button>
                 ))}
@@ -80,9 +80,9 @@ const FloatingActionButton: React.FC<{ onAddClick: (type: string) => void }> = (
                              <span className="text-sm font-semibold bg-brand-surface text-brand-text-primary px-3 py-1.5 rounded-lg shadow-md">{action.label}</span>
                              <button
                                 onClick={() => { onAddClick(action.type); setIsOpen(false); }}
-                                className="w-12 h-12 rounded-full bg-brand-surface text-brand-text-primary shadow-lg flex items-center justify-center"
+                                className="w-10 h-10 rounded-full bg-brand-surface text-brand-text-primary shadow-lg flex items-center justify-center"
                             >
-                                {action.icon}
+                                <div className="w-4 h-4">{action.icon}</div>
                             </button>
                          </div>
                     ))}
@@ -90,9 +90,9 @@ const FloatingActionButton: React.FC<{ onAddClick: (type: string) => void }> = (
             )}
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className={`w-16 h-16 rounded-full flex items-center justify-center text-white shadow-xl transition-transform duration-200 ${isOpen ? 'rotate-45 bg-brand-danger' : 'bg-brand-accent'}`}
+                className={`w-14 h-14 rounded-full flex items-center justify-center text-white shadow-xl transition-transform duration-200 ${isOpen ? 'rotate-45 bg-brand-danger' : 'bg-brand-accent'}`}
             >
-                <PlusIcon className="w-8 h-8" />
+                <PlusIcon className="w-6 h-6" />
             </button>
         </div>
     );

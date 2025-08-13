@@ -150,8 +150,8 @@ const PromoCodes: React.FC<PromoCodesProps> = ({ promoCodes, setPromoCodes, proj
                                     <td className="px-4 py-3">{code.expiryDate ? new Date(code.expiryDate).toLocaleDateString('id-ID') : 'Tidak ada'}</td>
                                     <td className="px-4 py-3">
                                         <div className="flex items-center justify-center space-x-1">
-                                            <button onClick={() => handleOpenModal('edit', code)} className="p-2 text-brand-text-secondary hover:bg-brand-input rounded-full" title="Edit"><PencilIcon className="w-5 h-5" /></button>
-                                            <button onClick={() => handleDelete(code.id)} className="p-2 text-brand-text-secondary hover:bg-brand-input rounded-full" title="Hapus"><Trash2Icon className="w-5 h-5" /></button>
+                                            <button onClick={() => handleOpenModal('edit', code)} className="p-2 text-brand-text-secondary hover:bg-brand-input rounded-full" title="Edit"><PencilIcon className="w-4 h-4" /></button>
+                                            <button onClick={() => handleDelete(code.id)} className="p-2 text-brand-text-secondary hover:bg-brand-input rounded-full" title="Hapus"><Trash2Icon className="w-4 h-4" /></button>
                                         </div>
                                     </td>
                                 </tr>

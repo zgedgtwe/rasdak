@@ -44,8 +44,8 @@ const CategoryManager: React.FC<{
         <div key={category} className="flex items-center justify-between p-2.5 bg-brand-bg rounded-md">
             <span className="text-sm text-brand-text-primary">{category}</span>
             <div className="flex items-center space-x-2">
-                <button type="button" onClick={() => onEdit(category)} className="p-1 text-brand-text-secondary hover:text-brand-accent" title="Edit"><PencilIcon className="w-4 h-4" /></button>
-                <button type="button" onClick={() => onDelete(category)} className="p-1 text-brand-text-secondary hover:text-brand-danger" title="Hapus"><Trash2Icon className="w-4 h-4" /></button>
+                <button type="button" onClick={() => onEdit(category)} className="p-1.5 text-brand-text-secondary hover:text-brand-accent" title="Edit"><PencilIcon className="w-4 h-4" /></button>
+                <button type="button" onClick={() => onDelete(category)} className="p-1.5 text-brand-text-secondary hover:text-brand-danger" title="Hapus"><Trash2Icon className="w-4 h-4" /></button>
             </div>
         </div>
     );
@@ -184,8 +184,8 @@ const ProjectStatusManager: React.FC<{
                                 <span className="font-semibold text-brand-text-light">{status.name}</span>
                             </div>
                             <div className="flex items-center gap-2">
-                                <button onClick={() => handleOpenModal('edit', status)} className="p-2 text-brand-text-secondary hover:bg-brand-input rounded-full"><PencilIcon className="w-5 h-5"/></button>
-                                <button onClick={() => handleDelete(status.id)} className="p-2 text-brand-text-secondary hover:bg-brand-input rounded-full"><Trash2Icon className="w-5 h-5"/></button>
+                                <button onClick={() => handleOpenModal('edit', status)} className="p-2 text-brand-text-secondary hover:bg-brand-input rounded-full"><PencilIcon className="w-4 h-4"/></button>
+                                <button onClick={() => handleDelete(status.id)} className="p-2 text-brand-text-secondary hover:bg-brand-input rounded-full"><Trash2Icon className="w-4 h-4"/></button>
                             </div>
                         </div>
                         {status.subStatuses.length > 0 && (
@@ -613,8 +613,8 @@ const Settings: React.FC<SettingsProps> = ({ profile, setProfile, transactions, 
                                         <p className="text-sm text-brand-text-secondary">{user.email} - <span className="font-medium">{user.role}</span></p>
                                     </div>
                                     <div className="flex items-center gap-2">
-                                        <button onClick={() => handleOpenUserModal('edit', user)} className="p-2 text-brand-text-secondary hover:bg-brand-input rounded-full" title="Edit"><PencilIcon className="w-5 h-5"/></button>
-                                        <button onClick={() => handleDeleteUser(user.id)} className="p-2 text-brand-text-secondary hover:bg-brand-input rounded-full" title="Hapus"><Trash2Icon className="w-5 h-5"/></button>
+                                        <button onClick={() => handleOpenUserModal('edit', user)} className="p-2 text-brand-text-secondary hover:bg-brand-input rounded-full" title="Edit"><PencilIcon className="w-4 h-4"/></button>
+                                        <button onClick={() => handleDeleteUser(user.id)} className="p-2 text-brand-text-secondary hover:bg-brand-input rounded-full" title="Hapus"><Trash2Icon className="w-4 h-4"/></button>
                                     </div>
                                 </div>
                             ))}

@@ -124,8 +124,8 @@ const SOPManagement: React.FC<SOPProps> = ({ sops, setSops, profile, showNotific
                                             </div>
                                         </div>
                                         <div className="flex items-center gap-2">
-                                            <button onClick={(e) => { e.stopPropagation(); handleOpenModal('edit', sop); }} className="p-2 text-brand-text-secondary hover:text-brand-accent rounded-full"><PencilIcon className="w-5 h-5" /></button>
-                                            <button onClick={(e) => { e.stopPropagation(); handleDelete(sop.id); }} className="p-2 text-brand-text-secondary hover:text-brand-danger rounded-full"><Trash2Icon className="w-5 h-5" /></button>
+                                            <button onClick={(e) => { e.stopPropagation(); handleOpenModal('edit', sop); }} className="p-2 text-brand-text-secondary hover:text-brand-accent rounded-full"><PencilIcon className="w-4 h-4" /></button>
+                                            <button onClick={(e) => { e.stopPropagation(); handleDelete(sop.id); }} className="p-2 text-brand-text-secondary hover:text-brand-danger rounded-full"><Trash2Icon className="w-4 h-4" /></button>
                                         </div>
                                     </div>
                                 ))}

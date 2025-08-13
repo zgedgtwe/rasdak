@@ -366,10 +366,10 @@ const Contracts: React.FC<ContractsProps> = ({ contracts, setContracts, clients,
                                         {status.text}
                                     </div>
                                     <div className="flex items-center justify-center space-x-1 border-l border-brand-border pl-4">
-                                        <button onClick={() => handleViewContract(contract)} className="p-2 text-brand-text-secondary hover:bg-brand-input rounded-full" title="Lihat & Cetak"><EyeIcon className="w-5 h-5" /></button>
-                                        <button onClick={() => handleOpenQrModal(contract)} className="p-2 text-brand-text-secondary hover:bg-brand-input rounded-full" title="Bagikan QR Portal"><QrCodeIcon className="w-5 h-5" /></button>
-                                        <button onClick={() => handleOpenModal('edit', contract)} className="p-2 text-brand-text-secondary hover:bg-brand-input rounded-full" title="Edit"><PencilIcon className="w-5 h-5" /></button>
-                                        <button onClick={() => handleDelete(contract.id)} className="p-2 text-brand-text-secondary hover:bg-brand-input rounded-full" title="Hapus"><Trash2Icon className="w-5 h-5" /></button>
+                                        <button onClick={() => handleViewContract(contract)} className="p-2 text-brand-text-secondary hover:bg-brand-input rounded-full" title="Lihat & Cetak"><EyeIcon className="w-4 h-4" /></button>
+                                        <button onClick={() => handleOpenQrModal(contract)} className="p-2 text-brand-text-secondary hover:bg-brand-input rounded-full" title="Bagikan QR Portal"><QrCodeIcon className="w-4 h-4" /></button>
+                                        <button onClick={() => handleOpenModal('edit', contract)} className="p-2 text-brand-text-secondary hover:bg-brand-input rounded-full" title="Edit"><PencilIcon className="w-4 h-4" /></button>
+                                        <button onClick={() => handleDelete(contract.id)} className="p-2 text-brand-text-secondary hover:bg-brand-input rounded-full" title="Hapus"><Trash2Icon className="w-4 h-4" /></button>
                                     </div>
                                 </div>
                             </div>

@@ -152,9 +152,9 @@ const Assets: React.FC<AssetsProps> = ({ assets, setAssets, profile, showNotific
                                         </span>
                                     </td>
                                     <td className="px-6 py-4">
-                                        <div className="flex items-center justify-center space-x-2">
-                                            <button onClick={() => handleOpenModal('edit', asset)} className="p-2 text-brand-text-secondary hover:bg-brand-input rounded-full" title="Edit"><PencilIcon className="w-5 h-5" /></button>
-                                            <button onClick={() => handleDelete(asset.id)} className="p-2 text-brand-text-secondary hover:bg-brand-input rounded-full" title="Hapus"><Trash2Icon className="w-5 h-5" /></button>
+                                        <div className="flex items-center justify-center space-x-1">
+                                            <button onClick={() => handleOpenModal('edit', asset)} className="p-2 text-brand-text-secondary hover:bg-brand-input rounded-full" title="Edit"><PencilIcon className="w-4 h-4" /></button>
+                                            <button onClick={() => handleDelete(asset.id)} className="p-2 text-brand-text-secondary hover:bg-brand-input rounded-full" title="Hapus"><Trash2Icon className="w-4 h-4" /></button>
                                         </div>
                                     </td>
                                 </tr>

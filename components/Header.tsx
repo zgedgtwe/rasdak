@@ -94,8 +94,8 @@ const Header: React.FC<HeaderProps> = ({ pageTitle, toggleSidebar, setIsSearchOp
 
                  {/* Mobile Header */}
                  <div className="lg:hidden flex items-center gap-3 ml-2">
-                     <div className="w-10 h-10 rounded-full bg-brand-input flex items-center justify-center">
-                         <UsersIcon className="w-6 h-6 text-brand-text-secondary" />
+                     <div className="w-8 h-8 rounded-full bg-brand-input flex items-center justify-center">
+                         <UsersIcon className="w-4 h-4 text-brand-text-secondary" />
                      </div>
                      <div>
                          <p className="text-xs text-brand-text-secondary">Selamat Datang</p>
@@ -155,8 +155,8 @@ const Header: React.FC<HeaderProps> = ({ pageTitle, toggleSidebar, setIsSearchOp
                                     <p className="text-center text-sm text-brand-text-secondary p-8">Tidak ada notifikasi.</p>
                                 )}
                             </div>
-                        </div>
-                    )}
+                <div className="w-8 h-8 rounded-full bg-brand-bg flex items-center justify-center">
+                    <UsersIcon className="w-4 h-4 text-brand-text-secondary" />
                 </div>
             </div>
             <style>{`
